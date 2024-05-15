@@ -1,0 +1,186 @@
+::-webkit-scrollbar {
+    width: 12px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #6b6b6b, #bbbbbb); 
+    border-radius: 10px; 
+    box-shadow: 0px 1px 2px rgba(81, 255, 0, 0.5); 
+}
+
+::-webkit-scrollbar-track {
+    background: #ff0000;
+    border-radius: 10px; 
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3); 
+}
+
+li{
+    list-style-type: none;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+    animation: arcoiris 1s infinite;
+}
+
+p{
+    color: yellow !important;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+    background-color: transparent;
+    position: fixed;
+    color: rgb(233, 255, 34);
+    width: 100%;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: rgb(179, 181, 255);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+    padding-top: 5%;
+}
+
+section h1,
+section .h2 {
+    color: #7c0000;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 200px;
+    margin: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    text-align: left;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .sitemap,
+footer .contact-info {
+    max-width: 400px;
+}
+
+footer .sitemap ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .sitemap ul li {
+    text-align: left;
+}
+
+footer .sitemap ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .sitemap ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+@keyframes arcoiris {
+    0% {
+        background-color: red;
+    }
+    20% {
+        background-color: orange;
+    }
+    40% {
+        background-color: yellow;
+    }
+    60% {
+        background-color: green;
+    }
+    80% {
+        background-color: blue;
+    }
+    100% {
+        background-color: purple;
+    }
+}
